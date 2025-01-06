@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<lc:LibraryCompiler xmlns:lc="urn:abb-robotics-robotstudio-librarycompiler"
+										xmlns="urn:abb-robotics-robotstudio-graphiccomponent"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:schemaLocation="urn:abb-robotics-robotstudio-librarycompiler file:///C:\Program%20Files%20(x86)\ABB\SDK\RobotStudio%202023%20SDK\LibraryCompilerSchema.xsd
+                                        urn:abb-robotics-robotstudio-graphiccomponent file:///C:\Program%20Files%20(x86)\ABB\SDK\RobotStudio%202023%20SDK\GraphicComponentSchema.xsd">
+	<lc:Library fileName="ChangeTool.rslib">
+		<lc:DocumentProperties>
+			<lc:Author>alecabellec</lc:Author>
+			<lc:Image source="ChangeTool.png"/>
+		</lc:DocumentProperties>
+		<SmartComponent name="ChangeTool" icon="ChangeTool.png"
+										codeBehind="ChangeTool.CodeBehind,ChangeTool.dll"
+										canBeSimulated="true">
+			<Properties>
+        <DynamicProperty name="Tool_1_Robot" valueType="ABB.Robotics.RobotStudio.ProjectObject" group="Tag"></DynamicProperty>
+        <DynamicProperty name="Tool_2_Robot" valueType="ABB.Robotics.RobotStudio.ProjectObject" group="Tag"></DynamicProperty>
+        <DynamicProperty name="Tool_3_Robot" valueType="ABB.Robotics.RobotStudio.ProjectObject" group="Tag"></DynamicProperty>
+        <DynamicProperty name="Tool_4_Robot" valueType="ABB.Robotics.RobotStudio.ProjectObject" group="Tag"></DynamicProperty>
+        <DynamicProperty name="Tool_5_Robot" valueType="ABB.Robotics.RobotStudio.ProjectObject" group="Tag"></DynamicProperty>
+        <DynamicProperty name="Tool_6_Robot" valueType="ABB.Robotics.RobotStudio.ProjectObject" group="Tag"></DynamicProperty>
+			</Properties>
+			<Bindings>
+			</Bindings>
+			<Signals>
+        <IOSignal name="GI_OUTIL_NUMBER" signalType="DigitalGroupInput" description="Robot" group="Outil" minValue="0" maxValue="6"/>
+			</Signals>
+			<GraphicComponents>
+			</GraphicComponents>
+			<Assets>
+				<Asset source="ChangeTool.dll"/>
+			</Assets>
+		</SmartComponent>
+	</lc:Library>
+</lc:LibraryCompiler>
